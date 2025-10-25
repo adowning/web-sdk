@@ -1,0 +1,35 @@
+{
+	"name": "components-ui-vue",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"format": "prettier --write --ignore-path=../../.prettierignore .",
+		"lint": "eslint \"src\""
+	},
+	"type": "module",
+	"devDependencies": {
+		"eslint": "9.21.0",
+		"eslint-config-custom": "workspace:*",
+		"config-ts": "workspace:*",
+		"config-vite": "workspace:*",
+		"@vitejs/plugin-vue": "5.0.5"
+	},
+	"dependencies": {
+		"lodash": "4.17.16",
+		"@types/lodash": "4.17.16",
+		"vue": "3.4.31",
+		"vite": "6.2.0",
+		"@lingui/core": "5.2.0",
+		"pixi-vue": "workspace:*",
+		"constants-shared": "workspace:*",
+		"state-shared": "workspace:*",
+		"utils-shared": "workspace:*",
+		"utils-xstate": "workspace:*",
+		"utils-layout": "workspace:*",
+		"utils-event-emitter": "workspace:*",
+		"components-layout": "workspace:*",
+		"components-shared": "workspace:*",
+		"components-pixi": "workspace:*"
+	}
+}
