@@ -2,6 +2,7 @@
   "name": "twist-turbo",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
 	"license": "MIT",
   "scripts": {
     "lint": "turbo run lint",
@@ -17,6 +18,11 @@
     "e2e-mobile": "turbo run e2e-mobile"
   },
   "dependencies": {
+    "@eslint/js": "latest",
+    "typescript-eslint": "latest",
+    "eslint-plugin-svelte": "latest",
+    "eslint-plugin-vue": "latest",
+    "globals": "latest",
     "eslint": "9.21.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "3.5.2",
