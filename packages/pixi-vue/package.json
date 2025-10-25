@@ -1,0 +1,49 @@
+{
+	"name": "pixi-vue",
+	"version": "0.1.0",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/StakeEngine/web-sdk/tree/main/packages/pixi-vue"
+	},
+	"scripts": {
+		"format": "prettier --write --ignore-path=../../.prettierignore .",
+		"build": "vue-tsc && vite build",
+		"publish": "npm publish",
+		"lint": "eslint *.ts*"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.0.4",
+		"chromatic": "11.26.1",
+		"config-ts": "workspace:*",
+		"config-vite": "workspace:*",
+		"eslint": "9.21.0",
+		"eslint-config-custom": "workspace:*",
+		"prettier": "3.5.2",
+		"eventemitter3": "5.0.1",
+		"vue-tsc": "^2.0.6"
+	},
+	"dependencies": {
+		"@barvynkoa/particle-emitter": "0.0.1",
+		"@esotericsoftware/spine-core": "4.2.74",
+		"@esotericsoftware/spine-pixi-v8": "4.2.74",
+		"@types/webfontloader": "1.6.28",
+		"pixi-filters": "6.1.0",
+		"pixi.js": "8.8.1",
+		"vue": "^3.4.21",
+		"vite": "6.2.0",
+		"webfontloader": "1.6.28"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	}
+}
